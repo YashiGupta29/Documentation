@@ -1,0 +1,10 @@
+create database moods;	//if doesn't exist
+
+create table faq (id INT(10), Title LONGTEXT, Content LONGTEXT);
+
+LOAD DATA INFILE 'C:/wamp64/tmp/foods.csv' 
+INTO TABLE foods
+FIELDS TERMINATED BY '@' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'        
+IGNORE 1 ROWS;
